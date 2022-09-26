@@ -11,6 +11,7 @@ Webpage with html and CSS
 <html>
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>
         Aimie McElroy's UAT Space Page
     </title>
@@ -20,7 +21,7 @@ Webpage with html and CSS
     <!--thr UATSpace logo, downloaded from  https://synchronic.uat.edu/courses/5195/assignments/187442-->
     <img src="UATspaceLogo-1 (2).jpg">
 
-    <h1>
+    <h1 id="blinkText">
         UAT Space Program
     </h1>
     <p>
@@ -35,11 +36,18 @@ Webpage with html and CSS
     <br>
     <br>
     <br>
-    <button>
+<button>
         Start
-    </button>
-    <button>
+</button>
+<button>
         Stop
     </button>
+    <script type="text/javascript">
+        var blink = document.getElementById('blinkText');
+        setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
 </body>
+
 </html>
