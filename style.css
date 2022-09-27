@@ -1,6 +1,11 @@
 #blinkText {
-    color: #2d38be;
+    color: #040c81;
     font-size: 15px;
     font-weight: bold;
     transition: 0.5s;
+}
+
+body{
+    background-color: rgb(127, 70, 180);
+    color: aqua;
 }
