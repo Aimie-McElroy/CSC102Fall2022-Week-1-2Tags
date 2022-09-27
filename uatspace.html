@@ -11,6 +11,7 @@ Webpage with html and CSS
 <html>
 
 <head>
+    <script src="code.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>
         Aimie McElroy's UAT Space Page
@@ -30,18 +31,15 @@ Webpage with html and CSS
         This can be more than one line of text.<br>
     </p>
     <script>
-        alert("Test of the alert function. Welcome to UAT space!");
-        document.write("This is the test of the document.write function.");
+        
     </script>
     <br>
     <br>
+    <h2>Blastoff Timer</h2>
+    <div id="blastDis">When Started, Time left to blastoff will appear here</div>
     <br>
-<button>
-        Start
-</button>
-<button>
-        Stop
-    </button>
+<button onclick="countdownTimer();">Start</button>
+ <button>Stop</button>
     <script type="text/javascript">
         var blink = document.getElementById('blinkText');
         setInterval(function () {
