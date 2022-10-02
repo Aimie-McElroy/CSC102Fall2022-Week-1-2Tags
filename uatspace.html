@@ -17,27 +17,35 @@ Webpage with html and CSS
         Aimie McElroy's UAT Space Page
     </title>
 </head>
-
+<!--body tags as required by assignment-->
 <body>
     <!--thr UATSpace logo, downloaded from  https://synchronic.uat.edu/courses/5195/assignments/187442-->
     <img src="UATspaceLogo-1 (2).jpg">
-
-    <h1 id="blinkText">
-        UAT Space Program
-    </h1>
+<!--fulfils header requirement-->
+    <h1 id="blinkText">UAT Space Program </h1>
+<!--Paragraph tag for assignment-->
     <p>
         Test of the paragraph tags. <br>
         The paragraph tags are used in html to display more than one sentence. <br>
         This can be more than one line of text.<br>
     </p>
     <script>
-        
+    //one line comment
+    //created a textValue comment
+    var textValue = "Test of the document.write() function";
+    //use that textValue comment
+    document.write(textValue);
+
+/*multiline
+comment*/
     </script>
     <br>
     <br>
+
     <h2>Blastoff Timer</h2>
     <div id="blastDis">When Started, Time left to blastoff will appear here</div>
     <br>
+    <!--button requirements from assignmemt-->
 <button onclick="countdownTimer();">Start</button>
  <button>Stop</button>
     <script type="text/javascript">
@@ -45,7 +53,14 @@ Webpage with html and CSS
         setInterval(function () {
             blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
         }, 1500);
-    </script>
+    </script> 
+    <br>
+    <br>
+    <!--place to play CrapS-->
+<h1>Craps Game </h1> 
+<div id="die1Res">The die 1 result will go here</div><br>
+<div id="die2Res">The die 2 result will go here</div><br>
+<div id="gameRes">The game result will go here</div><br>
+<button onclick ="playcraps();"> Play Craps </button>
 </body>
-
 </html>
