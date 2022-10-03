@@ -65,6 +65,31 @@ function countdownTimer() {
     }, 50000);
 }
 
+//btrCountdownTimer Used to create assignment Efficiency mission control
+function brtCountdownTimer(){
+console.log("brtCountdownTimer() started");
+var currtime = 20;
+
+for(var i = 0; i < 11; i++){
+    setTimeout(function(){
+        //what we do each iteration
+        console.log(currTime);
+        document.getElementById("countDis").innerHTML = currTime;
+        currTime = currTime -2;
+    }, i * 2000)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 //begining of PlayCraps set up
 function playcraps(){
     //troubleshooting playCraps() has started
