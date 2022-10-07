@@ -105,7 +105,7 @@ function chgBtrCountdownTimer() {
                 document.getElementById("blastDis").innerHTML = currTime + "Seconds";
             }
             currTime = currTime - 5;
-        }, i * 5000)
+        }, i * 5000)//Success
 
     }
 }
