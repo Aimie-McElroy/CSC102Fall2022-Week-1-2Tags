@@ -109,6 +109,30 @@ function chgBtrCountdownTimer() {
 
     }
 }
+
+function startFun(){
+console.log ("startFun() started");
+//disable start button
+document.getElementById("startButton").disabled = true;
+
+//enable (disable)! stop button 
+document.getElementById("stopButton").disabled = false;
+}
+
+function stopFun(){
+console.log ("stopFun() started");
+//disable stop button
+document.getElementById("stopButton").disabled = true;
+
+//enable(disable!) stop button
+document.getElementById("startButton").disabled = false;
+}
+
+
+
+
+
+
 //begining of PlayCraps set up
 function playcraps() {
     //troubleshooting playCraps() has started
