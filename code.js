@@ -117,6 +117,7 @@ document.getElementById("startButton").disabled = true;
 
 //enable (disable)! stop button 
 document.getElementById("stopButton").disabled = false;
+chgBtrCountdownTimer();
 }
 
 function stopFun(){
@@ -126,6 +127,7 @@ document.getElementById("stopButton").disabled = true;
 
 //enable(disable!) stop button
 document.getElementById("startButton").disabled = false;
+
 }
 
 
