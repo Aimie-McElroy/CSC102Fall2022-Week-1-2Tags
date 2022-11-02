@@ -7,19 +7,26 @@ Create a diagram with 2 classes. Those classes need 3 attributes, 3 method
     class Shape{
         -length
         -width
+        -height
         +getLength()
         +setLength()
         +getWidth()
         +setWidth()
+        +getHeight()
+        +setHeight()
     }
 
     class ShapeSig{
         -length : int
         -width : int
+        -height : int
         +getLength() : int
         +setLength(n : int) : void
         +getWidth() : int
         +setWidth(n : int) : void
+        +getHeight() : int
+        +setHeight(n : int) : void
+
     }
 
 ```
