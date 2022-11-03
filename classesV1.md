@@ -4,30 +4,31 @@
 Create a diagram with 2 classes. Those classes need 3 attributes, 3 method
 ```mermaid
     classDiagram
-    class Shape{
-        -length
-        -width
-        -height
-        +getLength()
-        +setLength()
-        +getWidth()
-        +setWidth()
-        +getHeight()
-        +setHeight()
+   
+    class Rocket{
+            -bolts
+            -wires
+            -panels 
+            +getBolts()
+            +setBolts()
+            +getWires()
+            +setWires()
+            +getPanels()
+            +setPanels()
     }
 
-    class ShapeSig{
-        -length : int
-        -width : int
-        -height : int
-        +getLength() : int
-        +setLength(n : int) : void
-        +getWidth() : int
-        +setWidth(n : int) : void
-        +getHeight() : int
-        +setHeight(n : int) : void
-
+    class Engine{
+            -tank : int
+            -fuel : int
+            -nozzle : int
+            +getTank() : int
+            +setTank(e : int) : void
+            +getFuel() : int
+            +setFuel(e : int) : void
+            +getNozzle() : int
+            +setNozzle(e : int) : void
     }
+
 
 ```
 Attributes come before properties or methods<br>
