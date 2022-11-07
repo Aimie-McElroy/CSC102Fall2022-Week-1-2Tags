@@ -129,7 +129,28 @@ document.getElementById("stopButton").disabled = true;
 document.getElementById("startButton").disabled = false;
 
 }
+//enable playstation
+function Playstation(){
+console.log("Playstation() started");
+mySound= new sound("us-lab-background.mp3");
+mySound.play();
+}
 
+//enable sound file
+function sound(srcFile){
+this.sound = document.createElement("audio");
+this.sound.src = srcFile;
+this.sound.setAttribute("preload","audio");//Load audio program 
+this.sound.setAttribute("controls","none");
+this.sound.style.display = "none";//no controls available 
+document.body.appendChild(this.sound);//locks in
+this.play = function(){
+    this.sound.play();
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }
+}
 
 
 
@@ -170,3 +191,5 @@ function playcraps() {
         document.getElementById("gameRes").innerHTML = "You did not Win or Lose. Wanna try again?";
     }
 }
+
+

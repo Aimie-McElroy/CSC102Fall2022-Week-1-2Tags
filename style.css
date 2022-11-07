@@ -21,3 +21,13 @@ body{
     border-radius: 12px;
     border-color: turquoise;
 }
+
+
+.buttonlg{
+
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    border-radius: 12px;
+    border-color: turquoise;
+}
