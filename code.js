@@ -131,9 +131,9 @@ document.getElementById("startButton").disabled = false;
 }
 //enable playstation
 function Playstation(){
-console.log("Playstation() started");
+console.log("Playstation() started");//read to make sure code is read
 mySound= new sound("us-lab-background.mp3");
-mySound.play();
+mySound.play();//play audio
 }
 
 //enable sound file
@@ -144,13 +144,32 @@ this.sound.setAttribute("preload","audio");//Load audio program
 this.sound.setAttribute("controls","none");
 this.sound.style.display = "none";//no controls available 
 document.body.appendChild(this.sound);//locks in
-this.play = function(){
+this.play = function(){//enable play button
     this.sound.play();
     }
-    this.stop = function(){
+    this.stop = function(){//disable stop audio
         this.sound.pause();
     }
 }
+//Add another audio clip
+function PlayStar(){
+console.log("PlayStar started");
+
+}
+
+//Enable PlayStar-StarWars theme 
+function PlayStar(){
+    console.log("Playstation() started");//change audio and audio name
+    mySound= new sound("us-lab-background.mp3");//change audio name
+    mySound.play();// play audio
+    }
+
+
+
+
+
+
+
 
 
 
