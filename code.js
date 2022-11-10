@@ -159,21 +159,28 @@ console.log("PlayStar started");
 
 //Enable PlayStar-StarWars theme 
 function PlayStar(){
-    console.log("Playstation() started");//change audio and audio name
-    mySound= new sound("us-lab-background.mp3");//change audio name
+    console.log("PlayStar() started");//PlayStar started
+    mySound= new sound("Star Wars - Main Theme.mp3");//star wars thes 
     mySound.play();// play audio
     }
 
-
-
-
-
-
-
-
-
-
-
+    //enable sound file
+function sound(srcfile){
+    this.sound = document.createElement("audio");
+    this.sound.src = srcfile;
+    this.sound.setAttribute("preload","audio");//Load audio program 
+    this.sound.setAttribute("controls","none");
+    this.sound.style.display = "none";//no controls available 
+    document.body.appendChild(this.sound);//locks in
+    this.play = function(){//enable play button
+        this.sound.play();
+        }
+        this.stop = function(){//disable stop audio
+            this.sound.pause();
+            
+        }
+    }
+   
 
 //begining of PlayCraps set up
 function playcraps() {
