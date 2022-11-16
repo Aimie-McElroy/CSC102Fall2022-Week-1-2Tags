@@ -63,3 +63,30 @@ function dataRow(legend, value, units){
     msg += "</td>";
     return msg;
 }
+
+function updateDisplay(){
+console.log("updateDisplay() started");
+//record and display time data
+theTime = new Date();
+
+//new if then statement style cond ? // ifTrue : ifFalse
+console.log(theTime.getHours() + ":" + (theTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes()) 
++ ":" + (theTime.getSeconds() < 10 ? "0" + theTime.getSeconds() : theTime.getSeconds()));
+
+//update table
+var timeRead = data[index].time_seconds;
+
+if (timeRead) >= 10){
+document.getElementById("dataTable").rows["seconds"].innerHTML =
+     dataRow("Time Elapsed", data[index].time_second,"seconds");
+
+document.getElementById("dataTable").rows["latitude"].innerHTML =
+     dataRow("Latitude", data[index].time_second.latitude);
+
+document.getElementById("dataTable").rows["seconds"].innerHTML =
+     dataRow("Time Elapsed", data[index].time_second,"seconds");
+
+document.getElementById("dataTable").rows["seconds"].innerHTML =
+     dataRow("Time Elapsed", data[index].time_second,"seconds");
+}
+}

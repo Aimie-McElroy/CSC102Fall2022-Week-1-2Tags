@@ -118,7 +118,15 @@ document.getElementById("startButton").disabled = true;
 //enable (disable)! stop button 
 document.getElementById("stopButton").disabled = false;
 chgBtrCountdownTimer();
+
+document.getElementById("dataTable")
+
+//run updateDisplay()
+index = 0;
+timer = setInterval()updateDisplay, time_interval);
+
 }
+
 
 function stopFun(){
 console.log ("stopFun() started");
