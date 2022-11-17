@@ -18,6 +18,14 @@ Webpage with html and CSS
     <title>
         Aimie McElroy's UAT Space Page
     </title>
+    <script>
+        var theTime = new Date();
+        var time_interval = 5000;
+        var running = true;
+        var index = 0;
+        var timer;
+        var data = getData();
+    </script>
 </head>
 <!--body tags as required by assignment-->
 
@@ -38,19 +46,11 @@ Webpage with html and CSS
         <head>
             <th>Data Type</th>
             <th>Reading</th>
-            <script>
-                var theTime = new Date();
-                var time_interval = 5000;
-                var running = true;
-                var index = 0;
-                var timer;
-                var data = getData();
-            </script>
         </head>
 
         <tbody>
             <tr id="seconds"><tr>
-            <tr id=">latitude"><tr>
+            <tr id="latitude"><tr>
             <tr id="longitude"><tr>
             <tr id="gps altitude"><tr>
             <tr id="bmp sensor altitude"><tr>
@@ -60,32 +60,26 @@ Webpage with html and CSS
             <tr id="css sensor temperature"> <tr>
             <tr id="css sensor eCO2"><tr>
             <tr id="css sensor TVOC"><tr>
+            <tr id="uv"><tr>
             <tr id="accel X"><tr>
             <tr id="accel Y"><tr>
             <tr id="accel Z"><tr>
             <tr id="magnetic X"><tr>
             <tr id="magnetic Y"><tr>
             <tr id="magnetic Z"><tr>
-            <tr id="gyre X"><tr>
-            <tr id="gyre Y"><tr>
-            <tr id="gyre Z"><tr>
-
+            <tr id="gyro X"><tr>
+            <tr id="gyro Y"><tr>
+            <tr id="gyro Z"><tr>
+                
         </tbody>
     </table>
 <br>
-The current time is <div id="clockTime">Press start to </div>
-
+The current time is: <div id="clockTime">Press start to display current</div>
     <br>
     <br>
-    <!-- <h2>Blastoff Timer</h2>
-    <div id="blastDis">When Started, Time left to blastoff will appear here</div>
-    <br>
-   button requirements from assignmemt-->
-    <!--<button onclick="startFun();" id="startButton" class="button" >Start</button>
-    <button onclick="stopFun();" id="stopButton"class="button">Stop</button>
-    <script type="text/javascript">-->
-   
-    </script>
+    <button onclick="startFun();" id="startButton" class="button">Start</button>
+    <button onclick="stopFun();" id="stopButton" class="button">Stop</button>
+    <script type="text/javascript"></script>
     <br>
     <br>
     

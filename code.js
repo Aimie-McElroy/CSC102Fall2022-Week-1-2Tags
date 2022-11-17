@@ -1,194 +1,195 @@
-function countdownTimer() {
-    console.log("countdownTimer()started");
-    var currTime = 50;
-    document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+//function countdownTimer() { ( commented out)
+// console.log("countdownTimer()started");
+//  var currTime = 50;
+//  document.getElementById("blastDis").innerHTML = currTime + " Seconds";
 
-    //45 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 5000);
+//45 second display
+//  setTimeout(function () {
+//      currTime = currTime - 5;
+//      document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+//  }, 5000);
 
 
-    //40 second display { 
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 10000);
+//40 second display { 
+//   setTimeout(function () {
+//       currTime = currTime - 5;
+//       document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+//  }, 10000);
 
-    //35 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 15000);
+//35 second display
+// setTimeout(function () {
+//     currTime = currTime - 5;
+//     document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+// }, 15000);
 
-    //30 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 20000);
+//30 second display
+// setTimeout(function () {
+//    currTime = currTime - 5;
+//   document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+//   }, 20000);
 
-    //25 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 25000);
+//25 second display
+//  setTimeout(function () {
+//      currTime = currTime - 5;
+//    document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+//  }, 25000);
 
-    //20 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 30000);
+//20 second display
+//  setTimeout(function () {
+//    currTime = currTime - 5;
+//      document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+//}, 30000);
 
-    //15 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 35000);
+//15 second display
+//    setTimeout(function () {
+//       currTime = currTime - 5;
+//     document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+// }, 35000);
 
-    //10 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 40000);
+//10 second display
+//setTimeout(function () {
+//    currTime = currTime - 5;
+//  document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+// }, 40000);
 
-    //05 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = currTime + " Seconds";
-    }, 45000);
+//05 second display
+//   setTimeout(function () {
+//     currTime = currTime - 5;
+//   document.getElementById("blastDis").innerHTML = currTime + " Seconds";
+//  }, 45000);
 
-    //00 second display
-    setTimeout(function () {
-        currTime = currTime - 5;
-        document.getElementById("blastDis").innerHTML = "Blastoff";
-    }, 50000);
-}
+//00 second display
+// setTimeout(function () {
+//   currTime = currTime - 5;
+//      document.getElementById("blastDis").innerHTML = "Blastoff";
+//}, 50000);
+//}
 
 //btrCountdownTimer Used to fufill assignment Efficiency mission control
-function brtCountdownTimer() {
-    console.log("brtCountdownTimer() started");
-    var currTime = 50;
+//function brtCountdownTimer() {
+//   console.log("brtCountdownTimer() started");
+// var currTime = 50;
+//
+//  for (var i = 0; i < 11; i++) {
+//    setTimeout(function () {
+//what we do each iteration
+//      console.log(currTime);
+//    document.getElementById("blastDis").innerHTML = currTime;
+//  if (currTime == 0) {
+//    document.getElementById("blastDis").innerHTML = "Blastoff!!!"
+//      }
+//    currTime = currTime - 5;
+//    }, i * 5000)
 
-    for (var i = 0; i < 11; i++) {
-        setTimeout(function () {
-            //what we do each iteration
-            console.log(currTime);
-            document.getElementById("blastDis").innerHTML = currTime;
-            if (currTime == 0) {
-                document.getElementById("blastDis").innerHTML = "Blastoff!!!"
-            }
-            currTime = currTime - 5;
-        }, i * 5000)
+//    }
 
-    }
+//}
 
+//function chgBtrCountdownTimer() {
+// console.log("chgBtrCountdownTimer() started");
+// var currTime = 50;
+//  var ogCurrTime = currTime;
+
+//  for (var i = 0; i < 11; i++) {
+//      setTimeout(function () {
+//        //what we do each iteration
+//       console.log(currTime);
+//      if (currTime == 0){
+//less than 1/2 left   
+//        document.getElementById("blastDis").innerHTML = "Blastoff!!!";
+//  } else if (currTime < 0.5 * ogCurrTime){
+//we finished counting down
+//       document.getElementById("blastDis").innerHTML = "Warning Less than ½ way to launch, time left = " + currTime + " seconds";
+//  } else {
+//at the beginning
+//      document.getElementById("blastDis").innerHTML = currTime + "Seconds";
+//  }
+//  currTime = currTime - 5;
+// }, i * 5000)//Success
+
+//  }
+//}
+
+function startFun() {
+    console.log("startFun() started");
+    //disable start button
+    document.getElementById("startButton").disabled = true;
+
+    //enable (disable)! stop button 
+    document.getElementById("stopButton").disabled = false;
+
+   
+
+    //run updateDisplay()
+    index = 0;
+    timer = setInterval(updateDisplay, time_interval);
+    
+     document.getElementById("dataTable").innerHTML = "reading data";
 }
 
-function chgBtrCountdownTimer() {
-    console.log("chgBtrCountdownTimer() started");
-    var currTime = 50;
-    var ogCurrTime = currTime;
 
-    for (var i = 0; i < 11; i++) {
-        setTimeout(function () {
-            //what we do each iteration
-            console.log(currTime);
-            if (currTime == 0){
-                //less than 1/2 left   
-                document.getElementById("blastDis").innerHTML = "Blastoff!!!";
-            } else if (currTime < 0.5 * ogCurrTime){
-                //we finished counting down
-                document.getElementById("blastDis").innerHTML = "Warning Less than ½ way to launch, time left = " + currTime + " seconds";
-            } else {
-                //at the beginning
-                document.getElementById("blastDis").innerHTML = currTime + "Seconds";
-            }
-            currTime = currTime - 5;
-        }, i * 5000)//Success
+function stopFun() {
+    console.log("stopFun() started");
+    //disable stop button
+    document.getElementById("stopButton").disabled = true;
 
-    }
-}
+    //enable(disable!) stop button
+    document.getElementById("startButton").disabled = false;
 
-function startFun(){
-console.log ("startFun() started");
-//disable start button
-document.getElementById("startButton").disabled = true;
-
-//enable (disable)! stop button 
-document.getElementById("stopButton").disabled = false;
-chgBtrCountdownTimer();
-
-document.getElementById("dataTable")
-
-//run updateDisplay()
-index = 0;
-timer = setInterval()updateDisplay, time_interval);
-
-}
-
-
-function stopFun(){
-console.log ("stopFun() started");
-//disable stop button
-document.getElementById("stopButton").disabled = true;
-
-//enable(disable!) stop button
-document.getElementById("startButton").disabled = false;
-
+    clearInterval(timer);
 }
 //enable playstation
-function Playstation(){
-console.log("Playstation() started");//read to make sure code is read
-mySound= new sound("us-lab-background.mp3");
-mySound.play();//play audio
+function Playstation() {
+    console.log("Playstation() started");//read to make sure code is read
+    mySound = new sound("us-lab-background.mp3");
+    mySound.play();//play audio
 }
 
 //enable sound file
-function sound(srcFile){
-this.sound = document.createElement("audio");
-this.sound.src = srcFile;
-this.sound.setAttribute("preload","audio");//Load audio program 
-this.sound.setAttribute("controls","none");
-this.sound.style.display = "none";//no controls available 
-document.body.appendChild(this.sound);//locks in
-this.play = function(){//enable play button
-    this.sound.play();
+function sound(srcFile) {
+    this.sound = document.createElement("audio");
+    this.sound.src = srcFile;
+    this.sound.setAttribute("preload", "audio");//Load audio program 
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";//no controls available 
+    document.body.appendChild(this.sound);//locks in
+    this.play = function () {//enable play button
+        this.sound.play();
     }
-    this.stop = function(){//disable stop audio
+    this.stop = function () {//disable stop audio
         this.sound.pause();
     }
 }
 //Add another audio clip
-function PlayStar(){
-console.log("PlayStar started");
+function PlayStar() {
+    console.log("PlayStar started");
 
 }
 
 //Enable PlayStar-StarWars theme 
-function PlayStar(){
+function PlayStar() {
     console.log("PlayStar() started");//PlayStar started
-    mySound= new sound("Star Wars - Main Theme.mp3");//star wars thes 
+    mySound = new sound("Star Wars - Main Theme.mp3");//star wars thes 
     mySound.play();// play audio
-    }
+}
 
-    //enable sound file
-function sound(srcfile){
+//enable sound file
+function sound(srcfile) {
     this.sound = document.createElement("audio");
     this.sound.src = srcfile;
-    this.sound.setAttribute("preload","audio");//Load audio program 
-    this.sound.setAttribute("controls","none");
+    this.sound.setAttribute("preload", "audio");//Load audio program 
+    this.sound.setAttribute("controls", "none");
     this.sound.style.display = "none";//no controls available 
     document.body.appendChild(this.sound);//locks in
-    this.play = function(){//enable play button
+    this.play = function () {//enable play button
         this.sound.play();
-        }
-        this.stop = function(){//disable stop audio
-            this.sound.pause();
-            
-        }
     }
-   
+    this.stop = function () {//disable stop audio
+        this.sound.pause();
+
+    }
+}
+
 
 //begining of PlayCraps set up
 function playcraps() {
