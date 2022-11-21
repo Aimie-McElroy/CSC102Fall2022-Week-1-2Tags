@@ -84,47 +84,47 @@ function updateDisplay() {
     if (timeRead >= 10) {
 
 document.getElementById("dataTable").rows["seconds"].innerHTML = 
-        dataRow("Time Elapsed", data[index].time_second, "seconds");
+        dataRow("Time Elapsed", data[index].time_seconds, "seconds");
 document.getElementById("dataTable").rows["latitude"].innerHTML =
-        dataRow("Latitude", data[index].latitude, "");
+        dataRow("Latitude", data[index].latitude, "&#176");
 document.getElementById("dataTable").rows["longitude"].innerHTML =
-        dataRow("Longitude", data[index].longitude, "");
+        dataRow("Longitude", data[index].longitude, "&#176");
 document.getElementById("dataTable").rows["gps altitude"].innerHTML =
-         dataRow("GPS Altitude", data[index].gps_altitude, "");
+         dataRow("GPS Altitude", data[index].gps_altitude, "meters");
 document.getElementById("dataTable").rows["bmp sensor altitude"].innerHTML =
-         dataRow("BMP Sensor Altitude", data[index].bmpSensor_altitude, "");
+         dataRow("BMP Sensor Altitude", data[index].bmpSensor_altitude, "meters");
 document.getElementById("dataTable").rows["bmp sensor pressure"].innerHTML =
-        dataRow("BMP Sensor Pressure", data[index].bmpSensor_pressure, "");
+        dataRow("BMP Sensor Pressure", data[index].bmpSensor_pressure, "atm");
 document.getElementById("dataTable").rows["bmp sensor temperature"].innerHTML =
-        dataRow("BMP Sensor Temperature", data[index].bmpSensor_temp, "");
+        dataRow("BMP Sensor Temperature", data[index].bmpSensor_temp, "&#176;C");
 document.getElementById("dataTable").rows["digital sensor temperature"].innerHTML =
-        dataRow("Digital Sensor Temperature", data[index].digSensor_temp, "");
+        dataRow("Digital Sensor Temperature", data[index].digSensor_temp, "&#176;C");
 document.getElementById("dataTable").rows["css sensor temperature"].innerHTML =
-        dataRow("CSS Sensor Temperature", data[index].cssSensor_temp, "");
+        dataRow("CSS Sensor Temperature", data[index].cssSensor_temp, "&#176;C");
  document.getElementById("dataTable").rows["css sensor eCO2"].innerHTML =
-        dataRow("CSS Sensor eCO2", data[index].cssSensor_eCO2, "");
+        dataRow("CSS Sensor eCO2", data[index].cssSensor_eCO2, "ppm");
 document.getElementById("dataTable").rows["css sensor TVOC"].innerHTML =
-        dataRow("CSS Sensor TVOC", data[index].cssSensor_TVOC, "");
+        dataRow("CSS Sensor TVOC", data[index].cssSensor_TVOC, "ppm");
 document.getElementById("dataTable").rows["uv"].innerHTML =
         dataRow("UV", data[index].UV, "");
 document.getElementById("dataTable").rows["accel X"].innerHTML =
-        dataRow("Accel X", data[index].accelX, "");
+        dataRow("Accel X", data[index].accelX, "m/sec&#178");
 document.getElementById("dataTable").rows["accel Y"].innerHTML =
-        dataRow("Accel Y", data[index].accelY, "");
+        dataRow("Accel Y", data[index].accelY, "m/sec&#178");
 document.getElementById("dataTable").rows["accel Z"].innerHTML =
-        dataRow("Accel Z", data[index].accelZ, "");
+        dataRow("Accel Z", data[index].accelZ, "m/sec&#178");
 document.getElementById("dataTable").rows["magnetic X"].innerHTML =
-        dataRow("Magnetic X", data[index].magneticX, "");
+        dataRow("Magnetic X", data[index].magneticX, "T");
 document.getElementById("dataTable").rows["magnetic Y"].innerHTML =
-        dataRow("Magnetic Y", data[index].magneticY, "");
+        dataRow("Magnetic Y", data[index].magneticY, "T");
 document.getElementById("dataTable").rows["magnetic Z"].innerHTML =
-        dataRow("Magnetic Z", data[index].magneticZ, "");
+        dataRow("Magnetic Z", data[index].magneticZ, "T");
 document.getElementById("dataTable").rows["gyro X"].innerHTML =
-        dataRow("Gyro X", data[index].gyroX, "");
+        dataRow("Gyro X", data[index].gyroX, "&#176;/sec");
 document.getElementById("dataTable").rows["gyro Y"].innerHTML =
-        dataRow("Gyro Y", data[index].gyroY, "");
+        dataRow("Gyro Y", data[index].gyroY, "&#176;/sec");
 document.getElementById("dataTable").rows["gyro Z"].innerHTML =
-        dataRow("Gyro Z", data[index].gyroZ, "");
+        dataRow("Gyro Z", data[index].gyroZ, "&#176;/sec");
 
 
     }
