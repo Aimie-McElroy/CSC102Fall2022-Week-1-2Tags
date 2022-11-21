@@ -57,7 +57,7 @@ function getData() {
 function dataRow(legend, value, units) {
     msg = "<td>";
     msg += legend;
-    msg += ":</td><td";
+    msg += ":</td><td>";
     msg += value;
     msg += " " + units;
     msg += "</td>";
@@ -72,6 +72,11 @@ function updateDisplay() {
     //new if then statement style cond ? // ifTrue : ifFalse
     console.log(theTime.getHours() + ":" + (theTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes())
         + ":" + (theTime.getSeconds() < 10 ? "0" + theTime.getSeconds() : theTime.getSeconds()));
+    //update the onscreen time
+    document.getElementById("clockTime").innerHTML = theTime.getHours() + ":" + 
+    (theTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes()) + ":" + (theTime.getSeconds() < 10 ? "0" + 
+    theTime.getSeconds() : theTime.getSeconds());
+
 
     //update table
     var timeRead = data[index].time_seconds;
@@ -123,4 +128,11 @@ document.getElementById("dataTable").rows["gyro Z"].innerHTML =
 
 
     }
+
+if (index < 500){
+        index++;
+} else{
+        index = 0;
+}
+
 }

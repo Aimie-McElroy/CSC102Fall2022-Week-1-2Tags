@@ -124,7 +124,7 @@ function startFun() {
     index = 0;
     timer = setInterval(updateDisplay, time_interval);
     
-     document.getElementById("dataTable").innerHTML = "reading data";
+     document.getElementById("dataTable").rows["seconds"].innerHTML = "reading data";
 }
 
 
