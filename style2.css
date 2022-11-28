@@ -1,3 +1,10 @@
 body{
-    background-image: linear-gradient(to right,rgb(194, 25, 25), #f6f9fa);
+    background-image: linear-gradient(to right,rgb(161, 108, 185), #bedee9);
 }
+
+ Text {color: #fcfcfc;
+    font-size: 20px;
+    font-weight: bold;
+
+ }
+
