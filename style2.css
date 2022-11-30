@@ -1,5 +1,7 @@
 body{
+   
     background-image: linear-gradient(to right,rgb(161, 108, 185), #bedee9);
+    text-decoration-color:rgb(13, 13, 153);
 }
 
  Text {color: #fcfcfc;
